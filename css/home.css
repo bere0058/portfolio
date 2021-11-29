@@ -1,0 +1,39 @@
+/* Titles */
+h2 {
+    color: #F5DC64;
+}
+/* Navbar style */
+.navbar-nav > li {
+	width: 33.3%;
+}
+/* Main content */
+.row .col {
+    padding: 1% 5%;
+}
+.row .col:nth-child(2) {
+    padding: 1% 0;
+}
+.row .col > * {
+    padding: 1vw;
+}
+.row .col :nth-child(2) {
+    --bs-rows: 2;
+}
+.col > ul {
+    padding-top: 20% !important;
+}
+.col > ul > li {
+    padding: 2%;
+}
+/* Photo and Web Coding section */
+a > img {
+	padding: 0%;
+    transition-duration: .5s;
+}
+a > img:hover {
+    opacity: 80%;
+    transition-duration: .5s;
+}
+.pictures .row * {
+    padding: 1%;
+}
