@@ -1,6 +1,12 @@
-/* Titles */
+/* General Style*/
+body {
+    padding-bottom: 0;
+}
 h2 {
     color: #F5DC64;
+}
+h3 {
+    color: #F9BDC2;
 }
 /* Navbar style */
 .navbar-nav > li {
@@ -8,7 +14,7 @@ h2 {
 }
 /* Main content */
 .row .col {
-    padding: 1% 5%;
+    padding: 0% 5%;
 }
 .row .col:nth-child(2) {
     padding: 1% 0;

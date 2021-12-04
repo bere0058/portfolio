@@ -1,0 +1,71 @@
+/* Navbar style */
+.navbar-nav>li {
+  width: 25%;
+}
+
+/* Main content */
+img {
+  padding: 5% 15%;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  color: black;
+}
+
+/* Social icons template css from 'https://codepen.io/vishalamipara/pen/ZEYZVvr' */
+.social-icons {
+  padding: 30px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #4577A8;
+  line-height: 30px;
+  font-size: 3vw;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-icons a i {
+  line-height: 30px;
+  font-size: 3vw;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.social-icons a:hover i {
+  box-shadow: 0px 0px 150px #F5DC64;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+  color: #F5DC64;
+}
+
+/*Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' */
+
+.button .btn-5 {
+  background-color: #F6D9BB;
+}
+
+.button .btn-5:hover {
+  background: #F5DC64;
+}
+
+.button .btn-5:before,
+.button .btn-5:after {
+  background: #4577A8;
+}
