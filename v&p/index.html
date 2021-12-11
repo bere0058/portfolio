@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo's website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito&family=Roboto+Condensed:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="text-white">
+    <!-- Navigation using Bootstrap template -->
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                        <li class="nav-item d-flex justify-content-center custom-btn btn-5">
+                            <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center custom-btn btn-5 dropdown">
+                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../coding/index.html">Coding</a></li>
+                                <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center custom-btn btn-5">
+                            <a class="nav-link text-uppercase" aria-current="page" href="../about/index.html">About</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center custom-btn btn-5">
+                            <a class="nav-link text-uppercase" aria-current="page"
+                                href="../contact/index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main content -->
+        <header class="d-flex" role="heading">
+            <h1 class="text-uppercase w-50 pe-5">Photo and Video</h1>
+            <!-- Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' -->
+            <div class="my-4 align-self-center d-flex button ms-auto">
+                <a href="../coding/index.html"><button type="submit" class="custom-btn btn-5 py-3 rounded"
+                        role="button"><span>Web Coding</span></button></a>
+            </div>
+        </header>
+        <section class="bigbox">
+            <article>
+                <h2>Photography</h2>
+                <!-- Table template from Bootstrap -->
+                <div class="flex flex-column px-15">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/gatineau.JPG" class="w-100 py-2" alt="">
+                            <img src="img/rideau.JPG" class="w-100 py-2" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="img/kid.jpg" class="w-100 py-2" alt="">
+                            <img src="img/kidtree.JPG" class="w-100 py-2" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="img/scenary.jpg" class="w-100 py-2" alt="">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>Videography</h2>
+                <!-- Table template from Bootstrap -->
+                <section class="px-15">
+                        <iframe class="w-100" src="https://www.youtube.com/embed/GGcvO1yuFfs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <h3>Description</h3>
+                    <p>The addressed topic in this interview is the impact of the pandemic in the relationship of father
+                        and son.</p>
+                </section>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="d-flex col">
+                    <ul class="d-flex flex-column justify-content-center align-items-center">
+                        <li class="p-3"><a href="../about/index.html">About Us</a></li>
+                        <li><a href="../contact/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-6" role="contentinfo"> &#169; 2021 by
+                    Guillermo Bereche
+                </div>
+                <div class="d-flex justify-content-center col">
+                    <!-- Social icons effect template from 'https://codepen.io/vishalamipara/pen/ZEYZVvr' -->
+                    <div class="social-icons">
+                        <a href="#" title="twitter">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="linkedin">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://github.com/eisenfox/css3-social-buttons-2"></script>
+</body>
+
+</html>

@@ -140,6 +140,7 @@ body {
 	background-color: #4577A8;
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.5vw;
+	color: white;
 }
 
 main,
@@ -154,7 +155,6 @@ a {
 a:hover {
 	color: #F5DC64;
 }
-
 .nav-item>a,
 h1,
 h2,
@@ -166,7 +166,7 @@ h4 {
 
 h1 {
 	color: #F5DC64;
-	font-size: 4.5vw;
+	font-size: 4vw;
 }
 
 h2 {
@@ -178,10 +178,20 @@ h3 {
 	font-size: 2.2vw;
 	color: #F6D9BB;
 }
-
+/* Custom general style */
+.px-15 {
+	padding: 0 15%;
+}
+iframe {
+	height: 32vw;
+}
 /* Navbar */
 .bg-light {
 	background-color: #4577A8 !important;
+}
+
+.navbar-nav>li {
+	width: 25%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -193,7 +203,19 @@ h3 {
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #F9BDC2;
 }
+/* Nav links */
+.navbar-nav > .btn-5 {     
+	background-color: #4577A8;
+}
 
+.navbar-nav > .btn-5:hover {
+    background: #4577A8;
+}
+
+.navbar-nav > .btn-5:before,
+.navbar-nav > .btn-5:after {
+	background: #F6D9BB;
+}
 /*Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' */
 button {
 	padding: 2% !important;
@@ -214,11 +236,11 @@ button {
 	color: #4577A8;
 	padding: 0;
 	border: none;
-	background-color: #4577A8;
+	background-color: #F6D9BB;
 }
 
 .btn-5:hover {
-	background: #4577A8;
+	background: #F5DC64;
 }
 
 .btn-5:before,
@@ -229,7 +251,7 @@ button {
 	right: 0;
 	height: 2px;
 	width: 0;
-	background: #F6D9BB;
+	background: #4577A8;
 	transition: 400ms ease all;
 }
 
@@ -249,4 +271,54 @@ button {
 /* Main content */
 .bigbox {
 	padding: 0 5%;
+}
+/* Availability table */
+.table {
+    color: white;
+}
+/* Footer */
+footer {
+	background-color: white;
+	color: black;
+}
+
+/* Social icons template css from 'https://codepen.io/vishalamipara/pen/ZEYZVvr' */
+.social-icons {
+	padding: 30px;
+	text-align: center;
+}
+
+.social-icons a {
+	color: #4577A8;
+	line-height: 30px;
+	font-size: 3vw;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+.social-icons a i {
+	line-height: 30px;
+	font-size: 3vw;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+	transform: scale(1);
+}
+
+.social-icons a:hover i {
+	box-shadow: 0px 0px 150px #F5DC64;
+	z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1.5);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1.5);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1.5);
+	transition: all 200ms ease-in;
+	transform: scale(1.5);
+	color: #F5DC64;
 }
