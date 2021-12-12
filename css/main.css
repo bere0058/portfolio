@@ -226,8 +226,8 @@ iframe {
 	background: #F6D9BB;
 }
 /*Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' */
-button {
-	padding: 2% !important;
+.button>a, .button>a:hover {
+	color: #4577A8 !important;
 }
 
 .custom-btn {
