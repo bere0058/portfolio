@@ -403,17 +403,17 @@ footer {
 	}
 
 	/* General style */
-	h1 {
+	h1, .h1 {
 		padding: 5% 0 !important;
 		left: 10% !important;
 		font-size: 5vw;
 	}
 
-	h2 {
+	h2, .h2 {
 		font-size: 3.5vw;
 	}
 
-	h3 {
+	h3, .h3 {
 		font-size: 2.7vw;
 	}
 
@@ -454,14 +454,30 @@ footer {
 	.sticky-top {
 		max-width: 80.2%;
 	}
+	iframe {
+		height: 50vw;
+	}
 }
 @media screen and (max-width: 480px) {
 	/* General */
-	h1 {
+	h1, .h1 {
 		font-size: 6vw;
+	}
+	h2, .h2 {
+		font-size: 5vw;
+	}
+	h3, .h3 {
+		font-size: 3.7vw;
+	}
+	body {
+		font-size: 3vw;
 	}
 	/* Navbar */
 	.navbar-light .navbar-toggler {
 	padding: 0% 30%;
+	}
+	/* Content */
+	iframe {
+		height: 80vw;
 	}
 }
