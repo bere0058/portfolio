@@ -80,10 +80,6 @@ a>img:hover {
         width: 100% !important;
     }
 
-    .navbar {
-        left: 0 !important;
-    }
-
     /* Content */
     .row-cols-3>* {
         width: 100%;

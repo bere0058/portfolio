@@ -143,6 +143,7 @@ body {
 	font-size: 1.5vw;
 	color: white;
 	min-height: 480px;
+	min-width: 320px;
 }
 
 main,
@@ -153,6 +154,7 @@ footer {
 
 main {
 	padding-top: 0;
+	padding-bottom: 4%;
 }
 
 a {
@@ -461,23 +463,19 @@ footer {
 @media screen and (max-width: 480px) {
 	/* General */
 	h1, .h1 {
-		font-size: 6vw;
+		font-size: 7vw;
 	}
 	h2, .h2 {
-		font-size: 5vw;
+		font-size: 6vw;
 	}
 	h3, .h3 {
-		font-size: 3.7vw;
+		font-size: 4vw;
 	}
 	body {
-		font-size: 3vw;
+		font-size: 3.5vw;
 	}
 	/* Navbar */
 	.navbar-light .navbar-toggler {
 	padding: 0% 30%;
-	}
-	/* Content */
-	iframe {
-		height: 80vw;
 	}
 }
