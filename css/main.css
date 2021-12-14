@@ -222,6 +222,7 @@ iframe {
 
 .navbar-light .navbar-toggler {
 	border-color: black;
+	padding: 15% 30%;
 }
 .navbar-toggler-icon {
 	width: 3vw;
