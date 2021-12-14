@@ -448,3 +448,8 @@ footer {
 		max-width: 80.2%;
 	}
 }
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 6vw;
+	}
+}
