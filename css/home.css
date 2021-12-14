@@ -81,8 +81,7 @@ a>img:hover {
     }
 
     .navbar {
-        right: 0 !important;
-        left: auto !important;
+        left: 0 !important;
     }
 
     /* Content */

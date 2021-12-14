@@ -108,6 +108,7 @@ section {
 body {
 	line-height: 1;
 	font-size: 2vw;
+	min-height: 480px;
 }
 
 ol,
@@ -141,6 +142,7 @@ body {
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.5vw;
 	color: white;
+	min-height: 480px;
 }
 
 main,
@@ -220,6 +222,10 @@ iframe {
 
 .navbar-light .navbar-toggler {
 	border-color: black;
+}
+.navbar-toggler-icon {
+	width: 3vw;
+	height: 3vw;
 }
 
 .navbar-nav>li {
@@ -448,7 +454,8 @@ footer {
 		max-width: 80.2%;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+	/* General */
 	h1 {
 		font-size: 6vw;
 	}

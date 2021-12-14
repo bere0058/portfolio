@@ -9,4 +9,11 @@
     .button {
         justify-content: center!important;
     }
+    /* Fotter */
+
+}
+@media screen and (max-width: 520px) {
+    footer {
+        position: absolute;
+    }
 }
