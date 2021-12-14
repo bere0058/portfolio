@@ -10,7 +10,15 @@ h2 {
 h3 {
     color: #F9BDC2;
 }
+
+section {
+    background-color: #4577A8;
+}
+
 /* Navbar style */
+.navbar, main {
+    padding: 0!important;
+}
 .navbar-nav>li {
     width: 33.3%;
 }
@@ -60,24 +68,30 @@ a>img:hover {
     main {
         padding-top: 0;
     }
+
     /* Navbar */
-    .navbar, h1, .h1 {
-        position: relative;
-        left: 0!important;
-        padding: 5% 0!important;
+    .navbar,
+    h1,
+    .h1 {
+        padding: 5% 0 0 0 !important;
+        font-size: 6vw;
     }
-    .navbar, .h1 {
-        padding: 5% 0!important;
-    }
+
     svg {
-        width: 100%!important;
+        width: 100% !important;
     }
+
     .navbar {
-        right: 0!important;
-        left: auto!important;
+        right: 0 !important;
+        left: auto !important;
     }
+
     /* Content */
     .row-cols-3>* {
         width: 100%;
+    }
+
+    .col>ul {
+        padding-top: 1vw !important;
     }
 }

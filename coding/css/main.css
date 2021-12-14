@@ -1,0 +1,9 @@
+/* Media queries for different screen sizes */
+@media screen and (max-width: 992px) {
+    .availability {
+        flex-direction: column!important;
+    }
+    .availability>* {
+        width: 100% !important;
+    }
+}

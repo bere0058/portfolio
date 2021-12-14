@@ -1,0 +1,12 @@
+/* Media queries for different screen sizes */
+@media screen and (max-width: 992px) {
+    .portrait {
+        width: 100%!important;       
+    }
+    h2,p {
+        text-align: center;
+    }
+    .button {
+        justify-content: center!important;
+    }
+}
