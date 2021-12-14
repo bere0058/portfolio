@@ -92,7 +92,24 @@
     </header>
     <section class="bigbox">
       <div class="d-flex justify-content-center">
-        <img src="img/myself.JPG" alt="" class="w-75 portrait">
+        <picture class="d-flex justify-content-center">
+          <source srcset="
+          img/myself-derivatives/myself-320_x_213.jpg 320w,
+          img/myself-derivatives/myself-480_x_319.jpg 480w,
+          img/myself-derivatives/myself-720_x_480.jpg 720w,
+          img/myself-derivatives/myself-960_x_639.jpg 960w,
+          img/myself-derivatives/myself-1440_x_960.jpg 1440w,
+          img/myself-derivatives/myself-1920_x_1279.jpg 1920w" sizes="
+          (max-width: 320px) 320px,
+          (max-width: 480px) 480px,
+          (max-width: 640px) 640px,
+          (max-width: 720px) 720px,
+          (max-width: 960px) 960px,
+          (max-width: 1440px) 1440px,
+          (max-width: 1920px) 1920px" media="(min-width: 320px)">
+          <img src="img/myself-derivatives/myself.jpeg" class="w-75 portrait"
+              alt="myself">
+        </picture>
       </div>
       <article>
         <h2>Background</h2>
