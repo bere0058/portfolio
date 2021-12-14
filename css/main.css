@@ -383,7 +383,10 @@ footer {
 		height: 4vw;
 		position: absolute!important;
 	}
-
+	.navbar-collapse > ul {
+		transform: scale(4.6) translate(50%, 30%);
+		background-color: #4577A8;
+	}
 
 	.navbar-nav>li {
 		width: 100%;
