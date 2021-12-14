@@ -460,4 +460,8 @@ footer {
 	h1 {
 		font-size: 6vw;
 	}
+	/* Navbar */
+	.navbar-light .navbar-toggler {
+	padding: 0% 30%;
+	}
 }
