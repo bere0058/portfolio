@@ -16,7 +16,7 @@ section {
 }
 
 /* Navbar style */
-.navbar, main {
+main {
     padding: 0!important;
 }
 .navbar-nav>li {
@@ -24,17 +24,11 @@ section {
 }
 
 /* Main content */
-.row .col {
+.m-content {
     padding: 0% 5%;
 }
 
-.row .col:nth-child(2) {
-    padding: 1% 0;
-}
 
-.row .col>* {
-    padding: 1vw;
-}
 
 .row .col :nth-child(2) {
     --bs-rows: 2;
@@ -73,7 +67,7 @@ a>img:hover {
     .navbar,
     h1,
     .h1 {
-        padding: 5% 0% 0 0% !important;
+        padding: 5% 0%  !important;
     }
 
     svg {
@@ -87,5 +81,11 @@ a>img:hover {
 
     .col>ul {
         padding-top: 1vw !important;
+    }
+    main > div {
+        max-width: 90%!important;
+    }
+    .p-5 {
+        padding: 0!important;
     }
 }
