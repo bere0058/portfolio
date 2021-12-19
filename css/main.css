@@ -211,18 +211,31 @@ iframe {
 	display: none !important;
 }
 
+.width {
+	width: 100% !important;
+	z-index: 1031;
+	width: 3vw;
+	height: 4vw;
+	position: absolute !important;
+	padding: 5.5% 0% !important;
+}
+
 /* Navbar */
 .sticky-top {
 	max-width: 100%;
 }
+
 .bg-light {
 	background-color: #4577A8 !important;
+}
+.nav-item>a {
+	padding: 2% 0;
 }
 
 .navbar-light .navbar-toggler {
 	border-color: black;
-	padding: 15% 30%;
 }
+
 .navbar-toggler-icon {
 	width: 3vw;
 	height: 3vw;
@@ -325,6 +338,14 @@ footer {
 	color: black;
 }
 
+.f-link {
+	transition: 0.5s;
+}
+
+.f-link:hover {
+	color: #F5DC64;
+}
+
 /* Social icons template css from 'https://codepen.io/vishalamipara/pen/ZEYZVvr' */
 .social-icons {
 	text-align: center;
@@ -333,13 +354,13 @@ footer {
 .social-icons a {
 	color: #4577A8;
 	font-size: 2vw;
-	width: 4vw;
+	width: 3vw;
 	margin: 0 1vw;
 	text-decoration: none;
 }
 
 .social-icons a i {
-	font-size: 5vw;
+	font-size: 3vw;
 	-webkit-transition: all 200ms ease-in;
 	-webkit-transform: scale(1);
 	-ms-transition: all 200ms ease-in;
@@ -371,7 +392,7 @@ footer {
 	.navbar,
 	h1,
 	.h1 {
-		padding: 5% 0% !important;
+		padding: 5.5% 0% !important;
 		width: 100% !important;
 	}
 
@@ -381,10 +402,11 @@ footer {
 		width: min-content !important;
 		width: 3vw;
 		height: 4vw;
-		position: absolute!important;
+		position: absolute !important;
 	}
-	.navbar-collapse > ul {
-		transform: scale(1.5) translate(0%, 30%);
+
+	.navbar-collapse>ul {
+		transform: scale(1.5) translate(0%, 20%);
 		background-color: #4577A8;
 	}
 
@@ -405,17 +427,20 @@ footer {
 	}
 
 	/* General style */
-	h1, .h1 {
+	h1,
+	.h1 {
 		padding: 5% 0 !important;
 		left: 10% !important;
 		font-size: 5vw;
 	}
 
-	h2, .h2 {
+	h2,
+	.h2 {
 		font-size: 3.5vw;
 	}
 
-	h3, .h3 {
+	h3,
+	.h3 {
 		font-size: 2.7vw;
 	}
 
@@ -453,29 +478,40 @@ footer {
 	.bigbox {
 		padding: 0 !important;
 	}
+
 	.sticky-top {
 		max-width: 80.2%;
 	}
+
 	iframe {
 		height: 50vw;
 	}
 }
+
 @media screen and (max-width: 480px) {
+
 	/* General */
-	h1, .h1 {
+	h1,
+	.h1 {
 		font-size: 6.5vw;
 	}
-	h2, .h2 {
+
+	h2,
+	.h2 {
 		font-size: 5.8vw;
 	}
-	h3, .h3 {
+
+	h3,
+	.h3 {
 		font-size: 4vw;
 	}
+
 	body {
 		font-size: 3.5vw;
 	}
+
 	/* Navbar */
 	.navbar-light .navbar-toggler {
-	padding: 0% 30%;
+		padding: 0% 30%;
 	}
 }
