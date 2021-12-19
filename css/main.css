@@ -212,11 +212,11 @@ iframe {
 }
 
 .width {
-	z-index: 1031;
 	width: 81vw;
-	height: 94vw;
-	position: absolute !important;
-	padding: 5.5% 0% !important;
+	height: 100vw;
+}
+.t-relative {
+	display: none!important;
 }
 
 /* Navbar */
@@ -418,7 +418,7 @@ footer {
 	}
 
 	svg {
-		width: 25% !important;
+		width: 10% !important;
 	}
 
 	.navbar-nav>.btn-5 {

@@ -1,8 +1,9 @@
-const logo = document.getElementById('logo');
+const titles = document.getElementById('title');
 const button = document.getElementById('nav');
 
 button.addEventListener('click', () => {
-    nav.classList.remove('navbar');
+    nav.classList.toggle('navbar');
     nav.classList.toggle('width');
-    logo.classList.toggle('w-25');
+    title.classList.toggle('hidden-content');
+    title.classList.toggle('t-relative'); 
 }) ;
