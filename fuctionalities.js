@@ -1,9 +1,29 @@
-const titles = document.getElementById('title');
-const button = document.getElementById('nav');
+/*Navigation*/ 
+
+const button = document.querySelector('#btn');
+let footer = document.querySelector('.footer-container');
+let nav = document.querySelector('nav');
+let navContainer = document.querySelector('.sticky-top');
+let title = document.querySelector('h1');
+let container = document.querySelector('.container-fluid');
+let main = document.querySelector('main');
+let navDiv = document.querySelector('.nav-container');
 
 button.addEventListener('click', () => {
-    nav.classList.toggle('navbar');
+    main.classList.toggle('bg-tblack');
+    main.classList.toggle('blur');
+    footer.classList.toggle('blur');
     nav.classList.toggle('width');
-    title.classList.toggle('hidden-content');
-    title.classList.toggle('t-relative'); 
+    nav.classList.toggle('navbar');
+    nav.classList.toggle('bg-light');
+    title.classList.toggle('sticky-title');
+    title.classList.toggle('bg-transparent');
+    navContainer.classList.toggle('height');
+    container.classList.toggle('custom-container');
+    footer.classList.toggle('bg-tblack');
 }) ;
+
+let lo = () => {
+    navDiv.style.height = title.clientHeight + "px";
+}
+lo();

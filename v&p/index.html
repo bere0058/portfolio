@@ -20,9 +20,10 @@
 
 <body class="text-white">
     <!-- Navigation using Bootstrap template -->
-    <section class="container sticky-top px-0">
-      <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light px-0 start-0" role="navigation">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <section class="sticky-top bg-light">
+      <div class="container nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light px-0" role="navigation">
+        <button id="btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container-fluid">
@@ -69,7 +70,7 @@
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Portfolio
                 </a>
-                <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu bg-light w-100" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item text-center text-white" href="../coding/index.html">Coding</a></li>
                   <li><a class="dropdown-item text-center text-white" href="../v&p/index.html">Multimedia</a></li>
                 </ul>
@@ -86,12 +87,13 @@
           </div>
         </div>
       </nav>
-      <h1 class="text-uppercase w-25 hidden-content ms-auto text-end" id="title">Video and Photography</h1>
+      <h1 class="text-uppercase hidden-content ms-auto text-end m-0">Video and Photography</h1>
+    </div>
     </section>
     <main>
         <!-- Main content -->
         <header class="d-flex flex-row">
-            <h1 class="text-uppercase w-25 display-content">Video and Photography</h1>
+            <p class="text-uppercase w-25 display-content sticky-title h1">Video and Photography</p>
             <!-- Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' -->
             <div class="align-self-center d-flex ms-auto">
               <a href="../coding/index.html" class="custom-btn btn-5 p-3 rounded w-75 text-center ms-auto">Web Coding</a>
@@ -217,8 +219,8 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <div class="container">
+    <footer class="bg-white">
+      <div class="footer-container text-black">
         <div class="row">
           <div class="d-flex col">
             <ul class="d-flex flex-column justify-content-center align-items-center">
@@ -226,12 +228,12 @@
               <li class="p-1"><a href="../contact/index.html" class="f-link">Contact Us</a></li>
             </ul>
           </div>
-          <div class="d-flex justify-content-center align-items-center col-6" role="contentinfo"> &#169; 2021 by Guillermo
+          <div class="d-flex text-center align-items-center justify-content-center col-6" role="contentinfo"> &#169; 2021 by Guillermo
             Bereche
           </div>
           <div class="d-flex justify-content-center col">
             <!-- Social icons effect template from 'https://codepen.io/vishalamipara/pen/ZEYZVvr' -->
-            <div class="social-icons d-flex align-items-center">
+            <div class="social-icons d-flex align-items-center  ms-auto  icon-container">
               <a href="#" title="twitter">
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
               </a>
