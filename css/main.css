@@ -218,7 +218,6 @@ iframe {
 }
 .collapse:not(.show) {
 	display: none;
-	transition: 0s;
 }
 
 .width {
@@ -236,6 +235,9 @@ iframe {
 }
 
 /* Navbar */
+#navbarSupportedContent {
+	transition: 0s;
+}
 .sticky-top>.container {
 	max-width: 80%;
 	padding: 0;
