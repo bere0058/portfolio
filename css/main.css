@@ -155,7 +155,7 @@ footer>.footer-container {
 main {
 	padding-top: 0;
 	padding-bottom: 4%;
-	transition: ease-in 0.2s;
+	transition: ease-in 4s;
 }
 
 a {
