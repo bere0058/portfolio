@@ -213,8 +213,12 @@ iframe {
 	display: none !important;
 }
 
-.show-content {
-	display: none !important;
+.show {
+	display: block;
+}
+.collapse:not(.show) {
+	display: none;
+	transition: 0s;
 }
 
 .width {

@@ -9,6 +9,7 @@ let title = document.querySelector('h1');
 let container = document.querySelector('.container-fluid');
 let main = document.querySelector('main');
 let navDiv = document.querySelector('.nav-container');
+let navContent = document.getElementById('navbarSupportedContent');
 
 button.addEventListener('click', () => {
     main.classList.toggle('bg-tblack');
