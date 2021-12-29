@@ -1,6 +1,7 @@
 /*Navigation*/ 
 
 const button = document.querySelector('#btn');
+const navConatinerWidth = window.matchMedia("(max-width: 992px)")
 let footer = document.querySelector('.footer-container');
 let nav = document.querySelector('nav');
 let navContainer = document.querySelector('.sticky-top');
@@ -24,6 +25,8 @@ button.addEventListener('click', () => {
 }) ;
 
 let lo = () => {
-    navDiv.style.height = title.clientHeight + "px";
+    if (navConatinerWidth.matches) {
+        navDiv.style.height = title.clientHeight + "px";
+    }
 }
-lo();
+lo(); 
