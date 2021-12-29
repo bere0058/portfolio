@@ -406,7 +406,7 @@ footer>.footer-container {
 	/* Navbar */
 	.bg-tblack {
 		background-color: rgba(0, 0, 0, 0.418);		
-		transition: ease-out 4s;
+		transition: ease-out 0.2s;
 	}
 
 	.navbar {
@@ -454,6 +454,7 @@ footer>.footer-container {
 
 	.container-fluid {
 		background-color: transparent;
+		padding: 0;
 	}
 
 	/* General style */
