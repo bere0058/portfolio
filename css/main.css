@@ -167,9 +167,10 @@ a {
 h1, .h1, 
 h2,
 h3,
-h4 {
+h4,
+picture {
 	font-family: 'Lato', sans-serif;
-	padding: 5vw 0;
+	padding: 3vw 0;
 }
 
 h1,
@@ -177,7 +178,6 @@ h1,
 	color: #F5DC64;
 	font-size: 4vw;
 	background-color: #4577A8;
-	padding: 2vw 0;
 }
 
 h2,
@@ -209,10 +209,6 @@ iframe {
 	height: 32vw;
 }
 
-.hidden-content {
-	display: none !important;
-}
-
 .show {
 	display: block;
 }
@@ -240,7 +236,6 @@ iframe {
 }
 .sticky-top>.container {
 	max-width: 80%;
-	padding: 0;
 }
 
 .bg-light {
@@ -255,9 +250,6 @@ iframe {
 	padding: 2% 0;
 }
 
-.navbar-light .navbar-toggler {
-	border-color: black;
-}
 
 .navbar-toggler-icon {
 	width: 3vw;
@@ -280,17 +272,13 @@ iframe {
 
 /* Nav links */
 .navbar-nav>.btn-5,
-.container-fluid {
+.container-fluid, .navbar-nav>.btn-5:hover{
 	background-color: #4577A8;
-}
-
-.navbar-nav>.btn-5:hover {
-	background: #4577A8;
 }
 
 .navbar-nav>.btn-5:before,
 .navbar-nav>.btn-5:after {
-	background: #F6D9BB;
+	background-color: #F6D9BB;
 }
 
 /*Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' */
@@ -410,6 +398,7 @@ footer>.footer-container {
 @media screen and (max-width: 992px) {
 
 	/* Navbar */
+
 	.bg-tblack {
 		background-color: rgba(0, 0, 0, 0.418);		
 		transition: ease-out 0.2s;
@@ -441,7 +430,9 @@ footer>.footer-container {
 		background-color: rgba(0, 0, 0, 0.755) !important;
 	}
 
-
+	.navbar-nav>.btn-5:hover {
+		background-color: #4577a800;
+	}
 	.navbar-nav>.btn-5 {
 		background-color: transparent;
 	}
@@ -460,7 +451,6 @@ footer>.footer-container {
 
 	.container-fluid {
 		background-color: transparent;
-		padding: 0;
 	}
 
 	/* General style */
@@ -484,7 +474,7 @@ footer>.footer-container {
 		font-size: 2vw;
 	}
 
-	.hidden-content {
+	.d-none {
 		display: block !important;
 	}
 
@@ -521,13 +511,13 @@ footer>.footer-container {
 		padding: 0 !important;
 	}
 
-	.sticky-top {
-		padding: 0;
-	}
 
 	iframe {
 		height: 50vw;
 	}
+
+	/* Multimedia Content */
+
 }
 
 @media screen and (max-width: 480px) {
