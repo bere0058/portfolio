@@ -21,9 +21,6 @@ section {
 main {
     padding: 0 0 2% 0%!important;
 }
-.navbar-nav>li {
-    width: 33.3%;
-}
 
 /* Main content */
 .m-content {
@@ -71,11 +68,7 @@ a>img:hover {
     .navbar,
     h1,
     .h1 {
-        padding: 5% 0%  !important;
-    }
-
-    svg {
-        width: 100% !important;
+        padding: 5% 0%;
     }
 
     /* Content */

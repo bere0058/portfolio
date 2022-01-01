@@ -253,7 +253,6 @@ iframe {
 	padding: 2% 0;
 }
 
-
 .navbar-toggler-icon {
 	width: 3vw;
 	height: 3vw;
@@ -574,5 +573,8 @@ footer>.footer-container {
 
 	.social-icons a i {
 		font-size: 7vw;
+	}
+	.navbar-toggler {
+		padding: 0 30%;
 	}
 }
