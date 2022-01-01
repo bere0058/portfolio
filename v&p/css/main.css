@@ -1,3 +1,7 @@
+/* Specific Style for Portfolio page */
+.mb-img {
+    padding: 0 1.5%;
+}
 @media screen and (max-width: 992px) {
     .mb-img {
         width: 100%;

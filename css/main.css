@@ -164,7 +164,8 @@ a {
 
 
 .nav-item>a,
-h1, .h1, 
+h1,
+.h1,
 h2,
 h3,
 h4,
@@ -212,6 +213,7 @@ iframe {
 .show {
 	display: block;
 }
+
 .collapse:not(.show) {
 	display: none;
 }
@@ -227,13 +229,14 @@ iframe {
 
 .blur {
 	filter: blur(60px);
-  	-webkit-filter: blur(60px);
+	-webkit-filter: blur(60px);
 }
 
 /* Navbar */
 #navbarSupportedContent {
 	transition: 0s;
 }
+
 .sticky-top>.container {
 	max-width: 80%;
 }
@@ -272,13 +275,21 @@ iframe {
 
 /* Nav links */
 .navbar-nav>.btn-5,
-.container-fluid, .navbar-nav>.btn-5:hover{
+.container-fluid,
+.navbar-nav>.btn-5:hover {
 	background-color: #4577A8;
 }
 
 .navbar-nav>.btn-5:before,
 .navbar-nav>.btn-5:after {
 	background-color: #F6D9BB;
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background-color: #6c92b8;
 }
 
 /*Button template css from 'https://codepen.io/yuhomyan/pen/LYNVVNO' */
@@ -400,7 +411,7 @@ footer>.footer-container {
 	/* Navbar */
 
 	.bg-tblack {
-		background-color: rgba(0, 0, 0, 0.418);		
+		background-color: rgba(0, 0, 0, 0.418);
 		transition: ease-out 0.2s;
 	}
 
@@ -433,6 +444,7 @@ footer>.footer-container {
 	.navbar-nav>.btn-5:hover {
 		background-color: #4577a800;
 	}
+
 	.navbar-nav>.btn-5 {
 		background-color: transparent;
 	}
@@ -495,13 +507,14 @@ footer>.footer-container {
 	.container .w-25 {
 		width: 100% !important;
 	}
-	
+
 	.sticky-title {
 		position: absolute;
 		top: 0;
 		width: 80% !important;
 		z-index: -1;
 	}
+
 	.grid-home {
 		flex-direction: column;
 	}
@@ -556,7 +569,7 @@ footer>.footer-container {
 	}
 
 	.icon-container {
-		margin-left: 0!important;
+		margin-left: 0 !important;
 	}
 
 	.social-icons a i {
