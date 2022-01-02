@@ -172,6 +172,7 @@ h4,
 picture {
 	font-family: 'Lato', sans-serif;
 	padding: 3vw 0;
+	font-weight: bold;
 }
 
 h1,
@@ -191,6 +192,11 @@ h3,
 .h3 {
 	font-size: 2.2vw;
 	color: #F6D9BB;
+}
+
+h4,
+.h4 {
+	font-size: 2vw;
 }
 
 /* Custom general style */
@@ -426,7 +432,7 @@ footer>.footer-container {
 		height: 4vw;
 		position: absolute !important;
 	}
-
+	
 	.nav-item>a {
 		background-color: transparent;
 	}
@@ -468,20 +474,29 @@ footer>.footer-container {
 	h1,
 	.h1 {
 		padding: 5vw 0 !important;
+		text-align: center;
 		font-size: 5vw;
 	}
 
 	h2,
 	.h2 {
+		text-align: center;
 		font-size: 3.5vw;
 	}
 
 	h3,
 	.h3 {
+		text-align: center;
 		font-size: 2.7vw;
 	}
 
+	h4,
+	.h4 {
+		text-align: center;
+		font-size: 2vw;
+	}
 	body {
+		text-align: center;
 		font-size: 2vw;
 	}
 
@@ -517,7 +532,10 @@ footer>.footer-container {
 	.grid-home {
 		flex-direction: column;
 	}
-
+	/* Button Header */
+	.hc-btn {
+		width: 100%;
+	}
 	/* Main Content */
 	.bigbox {
 		padding: 0 !important;
@@ -529,6 +547,9 @@ footer>.footer-container {
 	}
 
 	/* Multimedia Content */
+	.px-15 {
+		padding: 0!important;
+	}
 
 }
 
@@ -550,6 +571,10 @@ footer>.footer-container {
 		font-size: 4vw;
 	}
 
+	h4,
+	.h4 {
+		font-size: 3.5vw;
+	}
 	body {
 		font-size: 3.5vw;
 	}

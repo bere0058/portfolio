@@ -1,9 +1,9 @@
 /* Specific Style for Portfolio page */
-.mb-img {
+.vp-img {
     padding: 0 1.5%;
 }
 @media screen and (max-width: 992px) {
-    .mb-img {
+    .vp-img {
         width: 100%;
     }
 }
