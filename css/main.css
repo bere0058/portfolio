@@ -106,7 +106,6 @@ section {
 }
 
 body {
-	line-height: 1;
 	font-size: 2vw;
 	min-height: 480px;
 }
@@ -160,6 +159,7 @@ main {
 
 a {
 	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 3.5vw;
 }
 
 
@@ -167,8 +167,11 @@ a {
 h1,
 .h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 picture {
 	font-family: 'Lato', sans-serif;
 	padding: 3vw 0;
@@ -368,7 +371,7 @@ footer>.footer-container {
 	transition: 0.5s;
 }
 
-.f-link:hover {
+a :hover, .f-link:hover {
 	color: #F5DC64;
 }
 
