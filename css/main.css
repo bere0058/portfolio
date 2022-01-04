@@ -432,7 +432,9 @@ footer>.footer-container {
 		height: 4vw;
 		position: absolute !important;
 	}
-	
+	.navbar-toggler {
+		margin-right: 100%;
+	}
 	.nav-item>a {
 		background-color: transparent;
 	}
