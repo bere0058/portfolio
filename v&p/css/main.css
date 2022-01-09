@@ -17,7 +17,7 @@
     width: calc(100vw - 20vh);
 }
 .carousel-slides-container, .carousel-indicator {
-    transition: transform 1s ease-in;
+    transition: transform 0.2s ease-in;
 }
 /* Caraousel Button */
 .carousel {
