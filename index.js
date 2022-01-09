@@ -1,5 +1,8 @@
-/*Navigation*/ 
+/*Navigation*/
 
+/**********Declatation of variables**********/
+
+/*Button variables*/
 const main = document.querySelector('main');
 const nav = document.querySelector('nav');
 const navDiv = document.querySelector('.nav-container');
@@ -10,6 +13,8 @@ const button = document.querySelector('.navbar-toggler');
 const title = document.querySelector('h1');
 const container = document.querySelector('.container-fluid');
 const footer = document.querySelector('.footer-container');
+
+/**********Button click event**********/
 
 button.addEventListener('click', () => {
     main.classList.toggle('bg-tblack');
@@ -23,11 +28,13 @@ button.addEventListener('click', () => {
     title.classList.toggle('sticky-title');
     footer.classList.toggle('blur');
     footer.classList.toggle('bg-tblack');
-}) ;
+});
 
+/*Nav container height match*/
 const lo = () => {
     if (navConatinerWidth.matches) {
         navDiv.style.height = title.clientHeight + "px";
-    }
+    };
 }
-lo(); 
+lo();
+

@@ -2,6 +2,49 @@
 .vp-img {
     padding: 0 1.5%;
 }
+.d-hidden {
+    display: none;
+}
+/* Carousel Styel */
+.carousel-section {
+    padding: 10vh;
+}
+.current-slide, .carousel>button, .carousel-section {
+    z-index: 1;
+    transition: 1s ease-in;
+}
+.carousel-container, .carousel-nav {
+    width: calc(100vw - 20vh);
+}
+.carousel-slides-container, .carousel-indicator {
+    transition: transform 1s ease-in;
+}
+/* Caraousel Button */
+.carousel {
+    height: 80vh;
+}
+.carousel-btn {
+    cursor: pointer;
+    width: 5vw;
+    background: none;
+}
+.carousel-btn>img {
+    transform: rotate(90deg);
+}
+.carousel-btn .next {
+    transform: rotate(270deg);
+}
+.carousel-indicator {
+    height: 1vw;
+}
+.current-btn {
+    transform: scale(1.5);
+}
+/* Carousel Images */
+.carousel-img {
+    object-fit: cover;   
+}
+/* Carousel Nav*/
 @media screen and (max-width: 992px) {
     .vp-img {
         width: 100%;

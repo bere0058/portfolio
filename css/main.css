@@ -177,6 +177,10 @@ picture {
 	padding: 3vw 0;
 	font-weight: bold;
 }
+a:hover {
+	color: #F5DC64;
+	transition: 0.2s;
+}
 
 h1,
 .h1 {
