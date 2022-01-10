@@ -39,6 +39,7 @@
 }
 .current-btn {
     transform: scale(1.5);
+    background-color: rgb(110, 110, 110);
 }
 /* Carousel Images */
 .carousel-img {

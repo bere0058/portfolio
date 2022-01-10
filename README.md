@@ -6,6 +6,7 @@ Main challeges:
 What I learn:
 - Deeped my knowledge in Bootstrap 
 - Finessed my knowledge in HTML and CSS
+- Started in Java Script
 Used Resources:
 - Bootstrap v.s. 5.1.3
 - Specific resources as pluggins, fonts, etc. are specified in the documets
