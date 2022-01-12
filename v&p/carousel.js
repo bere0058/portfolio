@@ -8,7 +8,8 @@ const carousel = document.querySelector('.carousel-section');
 
 imagesArray.forEach(item => {
     item.addEventListener('click', (e) => {
-        carousel.innerHTML = `<div class="carousel d-flex overflow-hidden">
+        carousel.innerHTML = `<div class="carousel-return text-center">Press Esc to return</div>
+        <div class="carousel d-flex overflow-hidden">
         <button class="carousel-btn position-absolute align-self-center border-0 btn-previous d-none"><img src="img/arrow.svg" alt="arrow" class="w-100"></button>
         <div class="carousel-container">
           <ul class="d-flex justify-content-center carousel-slides-container">
@@ -111,7 +112,7 @@ imagesArray.forEach(item => {
         </div>
         <button class="carousel-btn position-absolute align-self-center border-0 btn-next d-none end-0"><img src="img/arrow.svg" alt="arrow" class="w-100 next"></button>
       </div>
-      <div class="carousel-nav d-flex justify-content-center position-absolute align-self-end p-2">
+      <div class="carousel-nav d-flex justify-content-center position-absolute p-2">
       <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
       <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
       <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>

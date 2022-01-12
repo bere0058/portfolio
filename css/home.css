@@ -17,11 +17,6 @@ section {
     background-color: #4577A8;
 }
 
-/* Navbar style */
-main {
-    padding: 0 0 2% 0%!important;
-}
-
 /* Main content */
 .m-content {
     padding: 0% 5%;
@@ -32,7 +27,7 @@ main {
 }
 
 .col>ul {
-    padding-top: 20% !important;
+    padding-top: 0% !important;
 }
 
 .col>ul>li {
@@ -42,6 +37,11 @@ main {
 /* Photo and Web Coding section */
 picture {
     padding: 0;
+}
+a>picture:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 a>img {
