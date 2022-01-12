@@ -31,10 +31,9 @@ button.addEventListener('click', () => {
 });
 
 /*Nav container height match*/
-const lo = () => {
+const navDivHeight = () => {
     if (navConatinerWidth.matches) {
         navDiv.style.height = title.clientHeight + "px";
     };
 }
-lo();
-
+navDivHeight();

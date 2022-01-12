@@ -208,6 +208,9 @@ h4,
 }
 
 /* Custom general style */
+.z-index-1 {
+	z-index: -1;
+}
 .w-15 {
 	width: 15%;
 }
