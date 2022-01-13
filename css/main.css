@@ -160,8 +160,12 @@ main {
 a {
 	font-family: 'Roboto Condensed', sans-serif;
 	line-height: 3.5vw;
+	transition: ease-out 0.2s;
 }
 
+a:hover {
+	transform: scale(1.05);
+}
 
 .nav-item>a,
 h1,
@@ -240,6 +244,10 @@ iframe {
 }
 
 .height {
+	height: 100%;
+}
+
+.background-color-primary {
 	background-color: #4577A8;
 }
 
@@ -332,6 +340,7 @@ iframe {
 
 .btn-5:hover {
 	background: #F5DC64;
+	color: #4577A8;
 }
 
 .btn-5:before,

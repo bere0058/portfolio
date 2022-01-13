@@ -20,7 +20,24 @@
 </head>
 
 <body class="text-white">
-  <section class="carousel-section d-hidden position-fixed bg-opacity-50"></section>
+  <section class="carousel-section d-hidden position-fixed bg-opacity-50">
+    <div class="carousel-return position-absolute text-center button">Press Esc to return or click here</div>
+        <div class="carousel d-flex overflow-hidden">
+        <button class="carousel-btn position-absolute align-self-center border-0 btn-previous d-none"><img src="img/arrow.svg" alt="arrow" class="w-100"></button>
+        <div class="carousel-container">
+          <ul class="d-flex justify-content-center carousel-slides-container">
+          </ul>
+        </div>
+        <button class="carousel-btn position-absolute align-self-center border-0 btn-next d-none end-0"><img src="img/arrow.svg" alt="arrow" class="w-100 next"></button>
+      </div>
+      <div class="carousel-nav d-flex justify-content-center position-absolute p-2">
+      <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
+      <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
+      <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
+      <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
+      <button class="carousel-indicator mx-2 border-0 rounded-circle"></button>
+    </div>
+  </section>
   <!-- Navigation using Bootstrap template -->
   <section class="sticky-top bg-light">
     <div class="container p-0 nav-container">
@@ -205,11 +222,9 @@
         </div>
         <section class="px-15">
           <h3>Description</h3>
-          <ul>
-            <li>Here are some of the best independent work of Lowis in photography.</li>
-            <li>He specializes but isn't ilimted to landscape and portrait photos.</li>
-            <li>The photography material has the purpose of complement and enhance the content of websites.</li>
-          </ul>
+          <p>Here are some of the best independent work of Guillermo in photography.</p>
+          <p>He specializes but isn't ilimted to landscape and portrait photos.</p>
+          <p>The photography material is produced with the purpose of complement and enhance the content of websites.</p>
         </section>
       </article>
       <article>
@@ -265,4 +280,5 @@
   <script src="./carousel.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </body>
+
 </html>

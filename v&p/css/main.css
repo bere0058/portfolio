@@ -11,7 +11,12 @@
 .carousel-section {
     padding: 10vh;
 }
-
+.carousel-return {
+    transform: translateY(-2.5vw);
+}
+.carousel-return:hover {
+    cursor: pointer;
+}
 .current-slide,
 .carousel>button,
 .carousel-section {
@@ -20,6 +25,7 @@
 }
 
 .carousel-container,
+.carousel-return,
 .carousel-nav {
     width: calc(100vw - 20vh);
 }
@@ -49,7 +55,7 @@
 
 .current-btn {
     transform: scale(1.5);
-    background-color: #F9BDC2;
+    background-color: black;
 }
 
 /* Carousel Images */
