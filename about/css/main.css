@@ -1,3 +1,7 @@
+/* Specific Style for About */
+.button>a>span:hover {
+    color: inherit;
+}
 /* Media queries for different screen sizes */
 @media screen and (max-width: 992px) {
     .portrait {
