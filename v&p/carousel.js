@@ -1,12 +1,11 @@
 /*Carousel variables*/
-const window992 = window.matchMedia("(min-width: 992px)");
+const window992Carousel = window.matchMedia("(min-width: 992px)");
 const Main = main.querySelectorAll('picture')
 const imagesMainArray = Array.from(Main);
 const carousel = document.querySelector('.carousel-section');
-const carouselContainer = document.querySelector('.carousel-container');
 
 /**********Carousel event**********/
-if (window992.matches) {
+if (window992Carousel.matches) {
   imagesMainArray.forEach(item => {
     item.addEventListener('click', (e) => {
       /*Background blur effect*/
@@ -14,6 +13,9 @@ if (window992.matches) {
       navContainer.classList.add('blur');
       carousel.classList.remove('d-none');
       /*Variables*/
+      const carouselContainer = document.querySelector('.carousel-container');
+      carouselContainer.innerHTML = `<ul class="d-flex justify-content-center carousel-slides-container">
+      </ul>`
       const carouselDiv = document.querySelector('.carousel');
       const carouselReturn = document.querySelector('.carousel-return');
       const carouselNav = document.querySelector('.carousel-nav');

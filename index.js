@@ -1,3 +1,5 @@
+/*General Script*/
+
 /*Navigation*/
 
 /**********Declatation of variables**********/
@@ -8,7 +10,7 @@ const nav = document.querySelector('nav');
 const navDiv = document.querySelector('.nav-container');
 const navContent = document.getElementById('navbarSupportedContent');
 const navContainer = document.querySelector('.sticky-top');
-const navConatinerWidth = window.matchMedia("(max-width: 992px)")
+const window992 = window.matchMedia("(max-width: 992px)");
 const button = document.querySelector('.navbar-toggler');
 const title = document.querySelector('h1');
 const container = document.querySelector('.container-fluid');
@@ -31,9 +33,6 @@ button.addEventListener('click', () => {
 });
 
 /*Nav container height match*/
-const navDivHeight = () => {
-    if (navConatinerWidth.matches) {
-        navDiv.style.height = title.clientHeight + "px";
-    };
-}
-navDivHeight();
+if (window992.matches) {
+    navDiv.style.height = title.clientHeight + "px";
+};

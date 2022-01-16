@@ -94,42 +94,18 @@
   <main class="p-0">
     <!-- Main content with Bootstrap grid template -->
     <div class="container d-flex">
-      <div class="row row-cols-3 grid-home m-content">
+      <div class="row row-cols-2 grid-home m-content"> 
         <section class="col d-flex flex-column">
-          <picture class="d-flex justify-content-center">
-            <source srcset="
-            img/portrait-derivatives/portrait-144_x_191.jpg 144w,
-            img/portrait-derivatives/portrait-240_x_319.jpg 240w,
-            img/portrait-derivatives/portrait-320_x_420.jpg 320w,
-            img/portrait-derivatives/portrait-480_x_639.jpg 480w,
-            img/portrait-derivatives/portrait-720_x_960.jpg 720w,
-            img/portrait-derivatives/portrait-960_x_1279.jpg 960w" sizes="
-            (max-width: 144px) 144px,
-            (max-width: 240px) 240px,
-            (max-width: 320px) 320px,
-            (max-width: 480px) 480px,
-            (max-width: 640px) 640px,
-            (max-width: 720px) 720px,
-            (max-width: 960px) 960px" media="(min-width: 144px)">
-            <img src="img/portrait-derivatives/portrait.jpeg" class="w-75"
-                alt="portrait-thumbnail">
-            </picture>   
-          <h2 class="text-center">What can I do for YOU</h2>
-        </section>
-        <section class="col d-flex flex-column align-self-end">
           <h1 class="text-center display-content">Guillermo Bereche</h1>
-          <h3 class="text-center display-content">Interactive Media Designer</h3>
-          <ul class="d-flex flex-column">
-            <li class="text-center">Front end development</li>
-            <li class="text-center">Design of web mockups</li>
-            <li class="text-center">Photography and Video for web</li>
-          </ul>
+          <h3 class="text-center text-white">Interactive Media Designer</h3>
+          <p class="roles h2 d-flex justify-content-center flex-wrap"></p>
         </section>
         <section class="col d-flex flex-column">
-          <h2 class="text-center p-0">My Work</h2>
-          <h3 class="text-center">Web Coding</h3>
-          <a href="coding/index.html" class="d-flex justify-content-center">
-            <picture class="d-flex justify-content-center">
+          <a href="coding/index.html" class="d-flex justify-content-center mt-4 w-75 align-self-center">
+            <picture class="d-flex justify-content-center position-relative p-0">
+              <div class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
+                <h3 class="text-white">Web Coding</h3>
+              </div>
             <source srcset="
             img/code-derivatives/code-144_x_72.jpg 144w,
             img/code-derivatives/code-240_x_120.jpg 240w,
@@ -144,13 +120,15 @@
             (max-width: 640px) 640px,
             (max-width: 720px) 720px,
             (max-width: 960px) 960px" media="(min-width: 144px)">
-            <img src="img/code-derivatives/code.jpeg" class="w-75 border boder-1"
+            <img src="img/code-derivatives/code.jpeg" class="w-100 border boder-1"
                 alt="code-thumbnail">
             </picture>          
           </a>
-          <h3 class="text-center">Photo and Video</h3>
-          <a href="v&p/index.html" class="d-flex justify-content-center">
-            <picture class="d-flex justify-content-center">
+          <a href="v&p/index.html" class="d-flex justify-content-center mt-5 w-75 align-self-center">
+            <picture class="d-flex justify-content-center position-relative p-0">
+              <div class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
+                <h3 class="text-white">Photo and Video</h3>
+              </div>
               <source srcset="
               img/p&v-derivatives/p&v-144_x_72.jpg 144w,
               img/p&v-derivatives/p&v-240_x_120.jpg 240w,
@@ -165,7 +143,7 @@
               (max-width: 640px) 640px,
               (max-width: 720px) 720px,
               (max-width: 960px) 960px" media="(min-width: 144px)">
-              <img src="img/p&v-derivatives/p&v.jpeg" class="w-75 border boder-1"
+              <img src="img/p&v-derivatives/p&v.jpeg" class="w-100 border boder-1"
                   alt="p&v-thumbnail">
             </picture> 
           </a>
@@ -177,6 +155,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="index.js"></script>
+  <script src="home.js"></script>
 </body>
 
 </html>

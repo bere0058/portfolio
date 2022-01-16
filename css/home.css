@@ -1,7 +1,4 @@
 /* General Style*/
-body {
-    padding-bottom: 0;
-}
 
 h2 {
     color: #F5DC64;
@@ -10,11 +7,6 @@ h2 {
 
 h3 {
     color: #F9BDC2;
-    padding: 7% 0;
-}
-
-section {
-    background-color: #4577A8;
 }
 
 /* Main content */
@@ -26,39 +18,33 @@ section {
     --bs-rows: 2;
 }
 
-.col>ul {
-    padding-top: 0% !important;
-}
-
 .col>ul>li {
     padding: 2%;
 }
 
 /* Photo and Web Coding section */
-picture {
-    padding: 0;
-}
+
 a>picture:hover {
     transform: scale(1.05);
     transition: 0.2s;
     cursor: pointer;
 }
 
-a>img {
-    padding: 0%;
-    transition-duration: .5s;
-}
-
-a>img:hover {
+a>:hover {
     opacity: 80%;
     transition-duration: .5s;
 }
 
-.pictures .row * {
-    padding: 1%;
+picture > div {
+    height: 100%;
 }
 
 /* Media queries for different screen sizes */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 5.3vw;
+    }
+}
 @media screen and (max-width: 992px) {
     main {
         padding-top: 0;
@@ -72,9 +58,6 @@ a>img:hover {
     }
 
     /* Content */
-    .row-cols-3>* {
-        width: 100%;
-    }
 
     .col>ul {
         padding-top: 1vw !important;
@@ -84,5 +67,8 @@ a>img:hover {
     }
     .p-5 {
         padding: 0!important;
+    }
+    .roles {
+        min-height: 13vw;
     }
 }
