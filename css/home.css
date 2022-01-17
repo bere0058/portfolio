@@ -39,6 +39,28 @@ picture > div {
     height: 100%;
 }
 
+/* Type Writter effect from: https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.typewriter {
+    height: 100%;
+    border-right: 0.1em solid #F9BDC2; /* The typwriter cursor */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F9BDC2; }
+  }
+  
 /* Media queries for different screen sizes */
 @media screen and (min-width: 992px) {
     h1 {

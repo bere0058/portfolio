@@ -94,19 +94,23 @@
   <main class="p-0">
     <!-- Main content with Bootstrap grid template -->
     <div class="container d-flex">
-      <div class="row row-cols-2 grid-home m-content"> 
+      <div class="row row-cols-2 grid-home m-content">
         <section class="col d-flex flex-column">
           <h1 class="text-center display-content">Guillermo Bereche</h1>
           <h3 class="text-center text-white">Interactive Media Designer</h3>
-          <p class="roles h2 d-flex justify-content-center flex-wrap"></p>
+          <div class="h2 d-flex flex-row justify-content-center">
+            <p class="roles d-flex justify-content-center"></p>
+            <div class="typewriter overflow-hidden mt-auto"></div>
+          </div>
         </section>
         <section class="col d-flex flex-column">
           <a href="coding/index.html" class="d-flex justify-content-center mt-4 w-75 align-self-center">
             <picture class="d-flex justify-content-center position-relative p-0">
-              <div class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
+              <div
+                class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
                 <h3 class="text-white">Web Coding</h3>
               </div>
-            <source srcset="
+              <source srcset="
             img/code-derivatives/code-144_x_72.jpg 144w,
             img/code-derivatives/code-240_x_120.jpg 240w,
             img/code-derivatives/code-320_x_160.jpg 320w,
@@ -120,13 +124,13 @@
             (max-width: 640px) 640px,
             (max-width: 720px) 720px,
             (max-width: 960px) 960px" media="(min-width: 144px)">
-            <img src="img/code-derivatives/code.jpeg" class="w-100 border boder-1"
-                alt="code-thumbnail">
-            </picture>          
+              <img src="img/code-derivatives/code.jpeg" class="w-100 border boder-1" alt="code-thumbnail">
+            </picture>
           </a>
           <a href="v&p/index.html" class="d-flex justify-content-center mt-5 w-75 align-self-center">
             <picture class="d-flex justify-content-center position-relative p-0">
-              <div class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
+              <div
+                class="p-0 position-absolute bg-dark bg-opacity-50 d-flex align-items-center justify-content-center w-100">
                 <h3 class="text-white">Photo and Video</h3>
               </div>
               <source srcset="
@@ -143,9 +147,8 @@
               (max-width: 640px) 640px,
               (max-width: 720px) 720px,
               (max-width: 960px) 960px" media="(min-width: 144px)">
-              <img src="img/p&v-derivatives/p&v.jpeg" class="w-100 border boder-1"
-                  alt="p&v-thumbnail">
-            </picture> 
+              <img src="img/p&v-derivatives/p&v.jpeg" class="w-100 border boder-1" alt="p&v-thumbnail">
+            </picture>
           </a>
         </section>
       </div>

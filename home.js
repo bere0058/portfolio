@@ -14,7 +14,7 @@ if (window992.matches) {
 
 /*********Declaration of Variables**********/
 
-const rolesArray = [' Front-end developer', 'Design of web mock-ups', 'Photo and Video for web'];
+const rolesArray = ['Front-end developer', 'Code web mock-ups', 'Photo and Video for web'];
 let rolesList = document.querySelector('.roles');
 let phraseIndex = 0;
 let letterIndex = 0;
@@ -30,7 +30,7 @@ const createRoleList = () => {
     if (rolesText.clientWidth === 0) {
         rolesText.style.width = '1vw';
     }
-    
+
     setTimeout(() => {
         rolesText.remove()
     }, 3000)
@@ -43,7 +43,7 @@ const loop = () => {
         phraseIndex = 0;
         letterIndex = 0;
         loop();
-    } else if (letterIndex < rolesArray[phraseIndex].length) {
+    } else if (letterIndex + 1 < rolesArray[phraseIndex].length) {
         setTimeout(() => {
             createRoleList();
             letterIndex++;
