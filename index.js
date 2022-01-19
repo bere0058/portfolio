@@ -23,11 +23,12 @@ button.addEventListener('click', () => {
     main.classList.toggle('blur');
     nav.classList.toggle('width');
     nav.classList.toggle('navbar');
-    nav.classList.toggle('bg-light');
+    nav.classList.toggle('bg-blue-2');
     navContainer.classList.toggle('height');
     container.classList.toggle('custom-container');
     title.classList.toggle('bg-transparent');
     title.classList.toggle('sticky-title');
+    title.classList.toggle('end-0');
     footer.classList.toggle('blur');
     footer.classList.toggle('bg-tblack');
 });

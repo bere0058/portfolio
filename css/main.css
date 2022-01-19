@@ -135,6 +135,10 @@ table {
 
 /* End css resset */
 /* Starts document styling */
+/* Colors */
+.bg-blue-2 {
+	background-color: #1C3C5C;
+}
 /* General Body */
 body {
 	background-color: #4577A8;
@@ -240,7 +244,7 @@ iframe {
 
 .width {
 	height: 100vh;
-	padding-top: 6.8%;
+	padding-top: 5.5vw!important;
 }
 
 .height {
@@ -263,10 +267,6 @@ iframe {
 
 .sticky-top>.container {
 	max-width: 80%;
-}
-
-.bg-light {
-	background-color: #4577A8 !important;
 }
 
 .dropdown-menu {
@@ -297,10 +297,10 @@ iframe {
 }
 
 /* Nav links */
-.navbar-nav>.btn-5,
+.sticky-top, .navbar-nav>.btn-5,
 .container-fluid,
 .navbar-nav>.btn-5:hover {
-	background-color: #4577A8;
+	background-color: #1C3C5C;
 }
 
 .navbar-nav>.btn-5:before,
@@ -546,7 +546,6 @@ a :hover, .f-link:hover {
 	.sticky-title {
 		position: absolute;
 		top: 0;
-		width: 80% !important;
 		z-index: -1;
 	}
 
