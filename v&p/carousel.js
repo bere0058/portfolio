@@ -1,16 +1,14 @@
 /*Carousel variables*/
-const window992Carousel = window.matchMedia("(min-width: 992px)");
-const Main = main.querySelectorAll('picture')
-const imagesMainArray = Array.from(Main);
+import {window992} from '../index.js'
+const picturesMain = main.querySelectorAll('picture')
+const imagesMainArray = Array.from(picturesMain);
 const carousel = document.querySelector('.carousel-section');
 
 /**********Carousel event**********/
-if (window992Carousel.matches) {
+if (window992.matches) {
   imagesMainArray.forEach(item => {
     item.addEventListener('click', (e) => {
       /*Background blur effect*/
-      main.classList.add('blur');
-      navContainer.classList.add('blur');
       carousel.classList.remove('d-none');
       /*Variables*/
       const carouselContainer = document.querySelector('.carousel-container');
