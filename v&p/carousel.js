@@ -1,15 +1,19 @@
 /*Carousel variables*/
 import {window992} from '../index.js'
+const main = document.querySelector('main')
+const stickyTop = document.querySelector('.sticky-top')
 const picturesMain = main.querySelectorAll('picture')
 const imagesMainArray = Array.from(picturesMain);
 const carousel = document.querySelector('.carousel-section');
 
 /**********Carousel event**********/
-if (window992.matches) {
+if (window992) {
   imagesMainArray.forEach(item => {
     item.addEventListener('click', (e) => {
       /*Background blur effect*/
       carousel.classList.remove('d-none');
+      main.classList.add('blur')
+      stickyTop.classList.add('blur')
       /*Variables*/
       const carouselContainer = document.querySelector('.carousel-container');
       carouselContainer.innerHTML = `<ul class="d-flex justify-content-center carousel-slides-container">
@@ -84,6 +88,7 @@ if (window992.matches) {
       });
       const returnToPage = () => {
           carousel.classList.add('d-none');
+          stickyTop.classList.remove('blur')
           carouselSlidesContainer.innerHTML = "";
           main.classList.remove('blur');
           navContainer.classList.remove('blur');
