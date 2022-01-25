@@ -4,6 +4,7 @@
 
 /*********Declaration of Variables**********/
 
+import window992 from "./index.js"
 const mainGrid = document.querySelector('.m-content');
 
 if (window992.matches) {

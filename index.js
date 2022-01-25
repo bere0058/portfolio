@@ -5,7 +5,8 @@
 /**********Declatation of variables**********/
 
 /*Button variables*/
-export const window992 = window.matchMedia("(max-width: 992px)");
+const window992 = window.matchMedia("(max-width: 992px)");
+export default window992;
 const main = document.querySelector('main');
 const nav = document.querySelector('nav');
 const navDiv = document.querySelector('.nav-container');
