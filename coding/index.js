@@ -1,4 +1,4 @@
-import { window992 } from '../index.js'
+import window992 from '../index.js'
 const imgAll = document.querySelectorAll('img')
 if (window992.matches) {
     imgAll.forEach(item => {

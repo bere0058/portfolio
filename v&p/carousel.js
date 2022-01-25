@@ -1,5 +1,5 @@
 /*Carousel variables*/
-import {window992} from '../index.js'
+import window992 from '../index.js'
 const main = document.querySelector('main')
 const stickyTop = document.querySelector('.sticky-top')
 const picturesMain = main.querySelectorAll('picture')
@@ -22,11 +22,11 @@ if (window992) {
       const carouselReturn = document.querySelector('.carousel-return');
       const carouselNav = document.querySelector('.carousel-nav');
       const carouselSlidesContainer = document.querySelector('.carousel-slides-container');
-            
+
       /*Inserting carousel images from the main content*/
       for (let i = 0; i < imagesMainArray.length; i++) {
         carouselSlidesContainer.innerHTML += `<li class="carousel-slide position-absolute bg-black">${imagesMainArray[i].outerHTML}</li>`
-      }
+      };
       const carouselSlide = document.querySelectorAll('.carousel-slide');
       const slidesArray = Array.from(carouselSlidesContainer.children);
       const picturesArray = carousel.querySelectorAll('picture');
@@ -70,6 +70,7 @@ if (window992) {
         carouselSlidesContainer.style.transform = 'translateX(-' + targetSlide.style.left + ')';
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
+        playOnce = false
       }
       const moveWithBtn = (currentSlide, targetBtn) => {
         currentSlide.classList.remove('current-btn');
@@ -87,14 +88,14 @@ if (window992) {
         moveToSlide(carouselSlidesContainer, currentSlide, target);
       });
       const returnToPage = () => {
-          carousel.classList.add('d-none');
-          stickyTop.classList.remove('blur')
-          carouselSlidesContainer.innerHTML = "";
-          main.classList.remove('blur');
-          navContainer.classList.remove('blur');
-          navArray.forEach(item => {
-            item.classList.remove('current-btn');
-          })
+        carousel.classList.add('d-none');
+        stickyTop.classList.remove('blur')
+        carouselSlidesContainer.innerHTML = "";
+        main.classList.remove('blur');
+        stickyTop.classList.remove('blur');
+        navArray.forEach(item => {
+          item.classList.remove('current-btn');
+        })
       }
       window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
