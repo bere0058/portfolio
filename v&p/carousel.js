@@ -70,7 +70,6 @@ if (window992) {
         carouselSlidesContainer.style.transform = 'translateX(-' + targetSlide.style.left + ')';
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
-        playOnce = false
       }
       const moveWithBtn = (currentSlide, targetBtn) => {
         currentSlide.classList.remove('current-btn');
@@ -86,7 +85,9 @@ if (window992) {
         const target = slidesArray[targetIndex];
         moveWithBtn(currentBtn, targetBtn);
         moveToSlide(carouselSlidesContainer, currentSlide, target);
+        console.log('yes1')
       });
+      console.log('yes2')
       const returnToPage = () => {
         carousel.classList.add('d-none');
         stickyTop.classList.remove('blur')
