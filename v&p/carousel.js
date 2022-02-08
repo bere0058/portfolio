@@ -4,7 +4,8 @@ const main = document.querySelector('main')
 const stickyTop = document.querySelector('.sticky-top')
 const picturesMain = main.querySelectorAll('picture')
 const imagesMainArray = Array.from(picturesMain);
-const carousel = document.querySelector('.carousel-section');
+const carousel = document.querySelector('.carousel-section'); 
+console.log('s')
 
 /**********Carousel event**********/
 if (window992) {
@@ -85,9 +86,7 @@ if (window992) {
         const target = slidesArray[targetIndex];
         moveWithBtn(currentBtn, targetBtn);
         moveToSlide(carouselSlidesContainer, currentSlide, target);
-        console.log('yes1')
       });
-      console.log('yes2')
       const returnToPage = () => {
         carousel.classList.add('d-none');
         stickyTop.classList.remove('blur')
