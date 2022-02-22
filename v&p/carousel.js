@@ -1,11 +1,10 @@
 /*Carousel variables*/
-import window992 from '../index.js'
+const window992 = window.matchMedia("(max-width: 992px)")
 const main = document.querySelector('main')
 const stickyTop = document.querySelector('.sticky-top')
 const picturesMain = main.querySelectorAll('picture')
 const imagesMainArray = Array.from(picturesMain);
 const carousel = document.querySelector('.carousel-section'); 
-console.log('s')
 
 /**********Carousel event**********/
 if (window992) {
