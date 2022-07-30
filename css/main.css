@@ -429,6 +429,18 @@ a :hover, .f-link:hover {
 	color: #F5DC64;
 }
 
+/* Logo */
+.cls-1 {
+    fill: #f6d9bb;
+}
+
+.cls-2 {
+    fill: #f7bdc2;
+    stroke: #f7bdc2;
+    stroke-miterlimit: 10;
+    stroke-width: 2.65px;
+}
+
 /* Media queries for differnt screen sizes */
 @media screen and (max-width: 992px) {
 
