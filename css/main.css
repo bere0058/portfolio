@@ -223,11 +223,13 @@ h4,
 }
 
 .px-15 {
-	padding: 0 15% !important;
+	padding-right: 15% !important;
+	padding-left: 15% !important;
 }
 
 .py-15 {
-	padding: 15% 0 !important;
+	padding-top: 15% !important;
+	padding-bottom: 15% !important;
 }
 
 iframe {

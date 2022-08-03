@@ -60,10 +60,10 @@ app.component('nav-bar', {
                 <li class="nav-item d-flex flex-column justify-content-center custom-btn btn-5 dropdown">
                   <a class="nav-link d-flex justify-content-center align-items-center text-uppercase dropdown-toggle"
                     href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Portfolio
+                    My work
                   </a>
                   <ul class="dropdown-menu bg-blue-2 w-100 border-0" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item text-center text-white" :href="link + 'coding/index.html'">Coding</a></li>
+                    <li><a class="dropdown-item text-center text-white" :href="link + 'coding/index.html'">Front-end</a></li>
                     <li><a class="dropdown-item text-center text-white" :href="link + 'v&p/index.html'">Multimedia</a></li>
                   </ul>
                 </li>
@@ -96,7 +96,7 @@ app.component('footer-bar', {
                 <li class="p-1"><a href="../contact/index.html" class="f-link">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="d-flex text-center align-items-center justify-content-center col-6" role="contentinfo"> &#169; 2021
+            <div class="d-flex text-center align-items-center justify-content-center col-6" role="contentinfo"> &#169; 2022
                 by Guillermo
                 Bereche
             </div>
