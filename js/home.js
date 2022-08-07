@@ -34,7 +34,7 @@ const createRoleList = () => {
 
     setTimeout(() => {
         rolesText.remove()
-    }, 3000)
+    }, 6000)
 }
 
 /* Role List Loop */
@@ -49,14 +49,14 @@ const loop = () => {
             createRoleList();
             letterIndex++;
             loop();
-        }, 50);
+        }, 100);
     } else {
         createRoleList();
         letterIndex = 0;
         phraseIndex++;
         setTimeout(() => {
             loop();
-        }, 3000)
+        }, 6000)
     }
 }
 

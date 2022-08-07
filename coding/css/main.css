@@ -1,6 +1,16 @@
+article {
+    border-top: solid 0.3vw white;
+}
+article:first-child {
+    border-top: none;
+}
+table > * {
+    border: none !important;
+}
 .display-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
 }
 /* Media queries for different screen sizes */
 @media screen and (max-width: 992px) {

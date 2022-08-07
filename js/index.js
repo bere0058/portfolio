@@ -91,7 +91,7 @@ app.component('footer-bar', {
         <div class="footer-container text-black">
             <div class="row">
             <div class="d-flex col">
-                <ul class="d-flex flex-column justify-content-center align-items-center">
+                <ul class="d-flex flex-column justify-content-center align-items-left">
                 <li class="p-1"><a href="../about/index.html" class="f-link">About Us</a></li>
                 <li class="p-1"><a href="../contact/index.html" class="f-link">Contact Us</a></li>
                 </ul>
