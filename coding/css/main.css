@@ -12,6 +12,9 @@ table > * {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
 }
+.display-vertical {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* Media queries for different screen sizes */
 @media screen and (max-width: 992px) {
     .availability {

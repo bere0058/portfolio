@@ -119,6 +119,129 @@ app.component('footer-bar', {
         </footer>
     `
 }) 
+app.component('front-end', {
+  data () {
+    return {
+      articles: {
+        noopimok: {
+          title: 'Noopimok',
+          images: ['img/noopimok-2.png', 'img/noopimok-3.png', 'img/noopimok-4.png', 'img/noopimok-6.png'],
+          backgrounds: ['Noopimok is an e-learning game about Algonquin language and culture.', 'Together with my team, composed by developers and designers, and with Michelle Lacroix, who is the creative director of the project, we worked on the final version of the game. Below you can find my main responsabilities as a developer.'],
+          responsabilities: ['Worked together with developers and designers in 4 different games (2, 3, 4, 6)', 'Kept constant communication with client to ensure their needs were satisfied', 'Pre-tested games, fixed buggy games, add new functionalities', 'Resized images and edited audio'],
+          coding: {
+            languages: 'HTML, CSS, SVG, JavaScript',
+            tools: 'FileZilla'
+          },
+          link: 'https://noopimok.ca/'
+        },
+        sushi: {
+          title: 'Sushi Fresh Paris',
+          images: ['img/sushi-fresh-hp.PNG', 'img/sushi-fresh-1.PNG', 'img/sushi-fresh-2.PNG', 'img/sushi-fresh-3.PNG'],
+          classes: 'display-vertical',
+          backgrounds: ['Sushi Fresh is a restaurant located in Paris. The objective of this project was redesign and code the Sushi Fresh app.'],
+          responsabilities: ['Display products with their respective name, image and prices', 'Let the user select and deselect their favorite products', 'Save selected products in the cart', 'Let the user remove any product from the cart'],
+          coding: {
+            languages: 'Languages: HTML, CSS/SCSS and JavaScript/JSON',
+            tools: 'Bootstrap, SASS and REST/API',
+            frameworks: 'React',
+          },
+          source: {
+            text: 'Fresh Sushi Paris website',
+            link: 'https://www.sushifreshparis.fr/index'
+          },
+          link: 'https://bere0058.github.io/sushi-fresh-fr/'
+        },
+        apodo: {
+          title: 'Apodo Search',
+          images: ['img/apodo-search.png', 'img/apodo-search-1.png'],
+          backgrounds: ['APODO search is a web application where the user can request different  Astronomy Pictures of the Day by date using NASA APOD API.'],
+          responsabilities: ['Users are able to choose to request different astronomy pictures', 'The application displays the title, date and the information of the corresponding picture', 'Users can save pictures in Favorites', 'Users can remove pictures from Favorites'],
+          coding: {
+            languages: 'HTML, CSS, JavaScript',
+            tools: 'Bootstrap, JQuery, REST API',
+          },
+          link: 'https://bere0058.github.io/mtm6302-project-2/'
+        },
+        idea: {
+          title: 'Idea Forum',
+          images: ['img/idea-forum.png', 'img/idea-forum-1.png'],
+          backgrounds: ['Idea Forum is a basic mock-up of a forum where users can create or modify ideas.'],
+          responsabilities: ['Ideas are displayed with their correspondent user', 'Users are able to create, modify or delete ideas', 'Users are able to upvote or downvote ideas', 'Ideas are ordered accordingly to votes'],
+          functionalities: true,
+          coding: {
+            languages: 'HTML, CSS, JavaScript',
+            tools: 'Bootstrap',
+          },
+          link: 'https://bere0058.github.io/mtm6302-project-1/'
+        },
+      }
+    }
+  },
+  template: `
+    <article v-for="article in articles">
+      <h2>{{article.title}}</h2>
+      <!-- Project 1 code embed from Codepen --> 
+      <section class="availability display-images" :class="article.classes">
+        <picture class="p-0" v-for="image in article.images">
+          <img :src="image" class="w-100" alt="noopimok-2">
+        </picture>
+      </section>
+      <!-- Table template from Bootstrap -->
+      <!-- Background -->
+      <section class="d-flex justify-content-center pt-4 flex-wrap">
+        <table class="table w-100" role="table">
+          <thead>
+            <tr>
+              <th scope="col" class=" h3">About the project</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="background in article.backgrounds">
+              <td class="">
+                {{background}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Responsabilities -->
+      <section class="d-flex justify-content-center pt-4 flex-wrap">
+        <table class="table w-100" role="table">
+          <thead>
+            <tr>
+              <th v-if="article.functionalities" scope="col" class=" h3">Functionalities</th>
+              <th v-else scope="col" class=" h3">Responsabilities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="responsability in article.responsabilities">
+              <td class="">{{responsability}}</td>
+            </tr>
+            <tr>
+              <th scope="col" class=" h3">Code:</th>
+            </tr>
+            <tr v-for="(code, name) in article.coding">
+              <td class="">
+                <p class="text-capitalize">{{name}}:</p> 
+                <p>{{code}}</p>
+              </td>
+            </tr>
+            <tr v-if="article.source">
+              <td class="">
+                Content, imagery and logo taken from <a class="text-decoration-underline" :href="link">{{text}}</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="d-flex justify-content-center mb-3 flex-wrap">
+        <div class="align-self-start d-flex ms-auto hc-btn">
+          <a :href="link" class="custom-btn btn-5 p-1 rounded">Check it on live</a>
+        </div>
+      </section>
+    </article>
+  `
+})
 const vm = app.mount('#app')
 
 /*General Script*/
