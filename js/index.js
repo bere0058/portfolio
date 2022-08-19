@@ -228,15 +228,15 @@ app.component('front-end', {
             </tr>
             <tr v-if="article.source">
               <td class="">
-                Content, imagery and logo taken from <a class="text-decoration-underline" :href="link">{{text}}</a>
+                Content, imagery and logo taken from <a class="text-decoration-underline" :href="article.link">{{text}}</a>
               </td>
             </tr>
           </tbody>
         </table>
       </section>
       <section class="d-flex justify-content-center mb-3 flex-wrap">
-        <div class="align-self-start d-flex ms-auto hc-btn">
-          <a :href="link" class="custom-btn btn-5 p-1 rounded">Check it on live</a>
+        <div class="align-self-start d-flex link-btn">
+          <a :href="article.link" class="custom-btn btn-5 p-1 rounded">Check it on live</a>
         </div>
       </section>
     </article>

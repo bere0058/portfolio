@@ -7,6 +7,9 @@ article:first-child {
 table > * {
     border: none !important;
 }
+.link-btn {
+    margin-left: auto;
+}
 .display-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,6 +28,9 @@ table > * {
     }
     .display-images {
         grid-template-columns: 1fr;
+    }
+    .link-btn {
+        margin: auto;
     }
 }
 @media screen and (max-width: 480px) {
