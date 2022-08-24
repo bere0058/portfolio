@@ -44,6 +44,8 @@ picture > div {
 
 .typewriter {
     height: 100%;
+    max-width: 1vw;
+    width: 1vw;
     border-right: 0.1em solid #F9BDC2; /* The typwriter cursor */
     animation: 
       typing 3.5s steps(40, end),
@@ -90,8 +92,5 @@ picture > div {
     }
     .p-5 {
         padding: 0!important;
-    }
-    .roles {
-        min-height: 13vw;
     }
 }

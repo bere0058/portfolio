@@ -1,5 +1,4 @@
 /*Vue*/
-//import header from './components/header.js'
 
 const app =  Vue.createApp({
     data() {
@@ -24,8 +23,8 @@ app.component('nav-bar', {
     template: `
     <section class="sticky-top py-2">
       <div class="container p-0 nav-container position-relative">
-        <nav class="navbar navbar-expand-lg navbar-light bg-blue-2 p-0 start-0" role="navigation">
-          <button id="btn" class="navbar-toggler border border-dark" type="button" data-bs-toggle="collapse"
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue-2 p-0" role="navigation">
+          <button id="btn" class="navbar-toggler p-1" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -126,7 +125,7 @@ app.component('front-end', {
         noopimok: {
           title: 'Noopimok',
           images: ['img/noopimok-2.png', 'img/noopimok-3.png', 'img/noopimok-4.png', 'img/noopimok-6.png'],
-          backgrounds: ['Noopimok is an e-learning game about Algonquin language and culture.', 'Together with my team, composed by developers and designers, and with Michelle Lacroix, who is the creative director of the project, we worked on the final version of the game. Below you can find my main responsabilities as a developer.'],
+          backgrounds: ['Noopimok is an e-learning game about Algonquin language and culture.', 'Together with my team, composed by developers and designers, and with Michel Lacroix, who is the creative director of the project, we worked on the final version of the game. Below you can find my main responsabilities as a developer.'],
           responsabilities: ['Worked together with developers and designers in 4 different games (2, 3, 4, 6)', 'Kept constant communication with client to ensure their needs were satisfied', 'Pre-tested games, fixed buggy games, add new functionalities', 'Resized images and edited audio'],
           coding: {
             languages: 'HTML, CSS, SVG, JavaScript',
@@ -142,7 +141,7 @@ app.component('front-end', {
           responsabilities: ['Display products with their respective name, image and prices', 'Let the user select and deselect their favorite products', 'Save selected products in the cart', 'Let the user remove any product from the cart'],
           coding: {
             languages: 'Languages: HTML, CSS/SCSS and JavaScript/JSON',
-            tools: 'Bootstrap, SASS and REST/API',
+            tools: 'Node JS, NPM,  Bootstrap, SASS and REST/API',
             frameworks: 'React',
           },
           source: {
@@ -242,6 +241,43 @@ app.component('front-end', {
     </article>
   `
 })
+app.component('videography', {
+  data() {
+    return {
+      videos: {
+        blinds: {
+          title: "Supreme Blinds Canada's advertisement",
+          link: "https://www.youtube.com/embed/KY2B0Hh-rhw",
+          description: "This's an advertisement for Supreme Blinds Canada. The ad showcases the main products of the business in a creative way",
+          software: ['Adobe After Effects', 'Adobe Premier Pro', 'Adobe Photoshop', 'Adobe Audition']
+        },
+        threeWays: {
+          title: "3 Ways of helping the environment",
+          link: "https://www.youtube.com/embed/ismxj43oHTc",
+          description: "This infographic present us 3 measures we can take in our daily life to help the environment.",
+          software: ['Adobe After Effects', 'Adobe Photoshop', 'Adobe Audition']
+        },
+        pandemic: {
+          title: "The pandemic told by a father",
+          link: "https://www.youtube.com/embed/GGcvO1yuFfs",
+          description: "The addressed topic in this interview is the impact of the pandemic in the relationship of father and son.",
+          software: ['Adobe Premier Pro', 'Adobe Audition']
+        }
+      }
+    }
+  },
+  template: `
+    <section class="py-3" v-for="video in videos">
+      <h3 class="pt-0">{{video.title}}</h3>
+      <p>{{video.description}}</p>
+      <h4 class="py-3">Software</h4>
+      <ul>
+        <li v-for="software in video.software">{{software}}</li>
+      </ul>
+      <iframe class="w-100 my-5" :src="video.link" title="video.title" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  `
+})
 const vm = app.mount('#app')
 
 /*General Script*/
@@ -256,11 +292,10 @@ export default window992;
 const main = document.querySelector('main');
 const nav = document.querySelector('nav');
 const navDiv = document.querySelector('.nav-container');
-const navContent = document.getElementById('navbarSupportedContent');
 const navContainer = document.querySelector('.sticky-top');
 const button = document.querySelector('.navbar-toggler');
 const title = document.querySelector('h1');
-const container = document.querySelector('.container-fluid');
+
 const footer = document.querySelector('.footer-container');
 
 /**********Button click event**********/
@@ -272,10 +307,7 @@ button.addEventListener('click', () => {
     nav.classList.toggle('navbar');
     nav.classList.toggle('bg-blue-2');
     navContainer.classList.toggle('height');
-    container.classList.toggle('custom-container');
-    title.classList.toggle('bg-transparent');
     title.classList.toggle('sticky-title');
-    title.classList.toggle('end-0');
     footer.classList.toggle('blur');
     footer.classList.toggle('bg-tblack');
 });

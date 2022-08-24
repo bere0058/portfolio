@@ -214,6 +214,9 @@ h4,
 }
 
 /* Custom general style */
+
+
+
 .z-index-1 {
 	z-index: -1;
 }
@@ -278,9 +281,14 @@ iframe {
 	padding: 2% 0;
 }
 
-.navbar-toggler-icon {
-	width: 3vw;
-	height: 3vw;
+.navbar-light .navbar-toggler {
+	border: #F9BDC2 solid .5vw;
+}
+
+.navbar-light .navbar-toggler-icon {
+	width: 4vw;
+	height: 4vw;
+	background-image: url('../img/home/menu-btn.svg');
 }
 
 .navbar-nav>li {
@@ -453,12 +461,8 @@ a :hover, .f-link:hover {
 	}
 
 	.navbar {
-		padding: 5.5vw 0% !important;
-		width: 100% !important;
-	}
-
-	.navbar {
 		z-index: 1031;
+		padding: 5.5vw 0% !important;
 		width: min-content !important;
 		width: 3vw;
 		height: 4vw;
@@ -466,6 +470,7 @@ a :hover, .f-link:hover {
 	}
 	.navbar-toggler {
 		margin-right: 100%;
+		display: flex;
 	}
 	.nav-item>a {
 		background-color: transparent;
@@ -474,10 +479,6 @@ a :hover, .f-link:hover {
 	.navbar-nav>li {
 		width: 100%;
 		padding: 4% 0%;
-	}
-
-	.navbarbutton {
-		background-color: rgba(0, 0, 0, 0.755) !important;
 	}
 
 	.navbar-nav>.btn-5:hover {
@@ -499,8 +500,11 @@ a :hover, .f-link:hover {
 	.custom-container {
 		padding-top: 6vw;
 	}
-
+	
 	.container-fluid {
+		display: flex;
+		height: 100%;
+		align-items: center;
 		background-color: transparent;
 	}
 
@@ -558,6 +562,8 @@ a :hover, .f-link:hover {
 
 	.sticky-title {
 		position: absolute;
+		right: 0;
+		background-color: transparent;
 		top: 0;
 		z-index: -1;
 	}
@@ -573,7 +579,6 @@ a :hover, .f-link:hover {
 	.bigbox {
 		padding: 0 !important;
 	}
-
 
 	iframe {
 		height: 50vw;
@@ -623,6 +628,10 @@ a :hover, .f-link:hover {
 
 	.custom-container {
 		padding-top: 25vw;
+	}
+
+	.container-fluid {
+		height: 60%;
 	}
 
 	.icon-container {
