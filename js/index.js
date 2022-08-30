@@ -144,6 +144,7 @@ app.component('front-end', {
             libraries: 'Bootstrap, JQuery',
             tools: 'SASS, REST API, Node JS, NPM, Firebase',
             frameworks: 'React',
+            backEnd: 'SQL'
           },
           source: {
             text: 'Fresh Sushi Paris website',
@@ -162,6 +163,7 @@ app.component('front-end', {
             librairies: 'Bootstrap',
             frameworks: 'Vue JS',
             tools: 'Vite JS, Node JS, NPM, Firebase',
+            backEnd: 'SQL'
           },
           link: 'https://bere0058.github.io/contact-book/'
         },
