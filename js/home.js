@@ -15,7 +15,7 @@ if (window992.matches) {
 
 /*********Declaration of Variables**********/
 
-const rolesArray = ['Web development', 'Game development', 'App Development', 'Multimedia Assets'];
+const rolesArray = ['Front-End Development', 'Back-End Developent', 'Multimedia Development'];
 let rolesList = document.querySelector('.roles');
 let phraseIndex = 0;
 let letterIndex = 0;

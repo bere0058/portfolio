@@ -109,36 +109,3 @@ if (window992) {
 }
 
 
-/**********Functions Yet to add**********/
-/*Button right
-btnNext.addEventListener('click', () => {
-    const currentSlide = carouselSlidesContainer.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentBtn = carouselNav.querySelector('.current-btn');
-    const nextBtn = currentBtn.nextElementSibling;
-    moveToSlide(carouselSlidesContainer, currentSlide, nextSlide);
-    moveWithBtn(currentBtn, nextBtn);
-})*/
-/*Button left
-btnPrevious.addEventListener('click', () => {
-    const currentSlide = carouselSlidesContainer.querySelector('.current-slide');
-    const previousSlide = currentSlide.previousElementSibling;
-    const currentBtn = carouselNav.querySelector('.current-btn');
-    const previousBtn = currentBtn.previousElementSibling;
-    moveToSlide(carouselSlidesContainer, currentSlide, previousSlide);
-    moveWithBtn(currentBtn, previousBtn);
-});*/
-/*Carousel Nav
-carouselNav.addEventListener('click', (e) => {
-    if (targetIndex === 0) {
-        btnPrevious.classList.add('d-none');
-        btnNext.classList.add('d-none');
-    } else if (targetIndex === slidesArray.length - 1) {
-        btnPrevious.classList.add('d-none');
-        btnNext.classList.add('d-none');
-    } else {
-        btnPrevious.classList.add('d-none');
-        btnNext.classList.add('d-none');
-    }
-    console.log(targetBtn)
-});*/

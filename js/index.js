@@ -125,7 +125,7 @@ app.component('front-end', {
         noopimok: {
           title: 'Noopimok',
           images: ['noopimok-2.png', 'noopimok-3.png', 'noopimok-4.png', 'noopimok-6.png'],
-          backgrounds: ['Noopimok is an e-learning game about Algonquin language and culture.', 'Together with my team, composed by developers and designers, and with Michel Lacroix, who is the creative director of the project, we worked on the final version of the game. Below you can find my main responsabilities as a developer.'],
+          background: ['Noopimok is an e-learning game about Algonquin language and culture. Together with my team, composed by developers and designers, and with Michel Lacroix, who is the creative director of the project, we worked on the final version of the game.'],
           responsabilities: ['Worked together with developers and designers in 4 different games (2, 3, 4, 6)', 'Kept constant communication with client to ensure their needs were satisfied', 'Pre-tested games, fixed buggy games, add new functionalities', 'Resized images and edited audio'],
           coding: {
             languages: 'HTML, CSS, SVG, JavaScript',
@@ -133,51 +133,37 @@ app.component('front-end', {
           },
           link: 'https://noopimok.ca/'
         },
+        enRoute: {
+          title: 'En Route',
+          images: ['enRoute-1.png', 'enRoute-2.png'],
+          background: ["En Route is a website that will make you discover Japan through the perspective of 4 french youtubers who know the country very well."],
+          responsabilities: ["Users can access to the 4 youtubers's page from the home page", "Each youtuber's page has a link to the youtuber channel", "Each youtuber's page display the playlists from their youtube channel", "The webapp is responsive"],
+          functionalities: true,
+          coding: {
+            languages: 'HTML, CSS, JavaScript, C#',
+            librairies: 'Bootstrap, jQuery',
+            frameworks: 'ASP.NET',
+            tools: 'Vite JS, Node JS, NPM, Firebase, SQL',
+          },
+          link: 'https://bere0058.github.io/contact-book/'
+        },
         sushi: {
           title: 'Sushi Fresh Paris',
           images: ['sushi-fresh-hp.PNG', 'sushi-fresh-1.PNG', 'sushi-fresh-2.PNG', 'sushi-fresh-3.PNG'],
           classes: 'display-vertical',
-          backgrounds: ['Sushi Fresh is a restaurant located in Paris. The objective of this project was redesign and code the Sushi Fresh app.'],
+          background: ['Sushi Fresh is a restaurant located in Paris. The objective of this project was redesign and code the Sushi Fresh app.'],
           responsabilities: ['Display products with their respective name, image and prices', 'Let the user select and deselect their favorite products', 'Save selected products in the cart', 'Let the user remove any product from the cart'],
           coding: {
-            languages: 'Languages: HTML, CSS/SCSS and JavaScript/JSON',
+            languages: 'HTML, CSS/SCSS and JavaScript',
             libraries: 'Bootstrap, JQuery',
-            tools: 'SASS, REST API, Node JS, NPM, Firebase',
+            tools: 'SASS, REST API, JSON, Node JS, NPM, Firebase, SQL',
             frameworks: 'React',
-            backEnd: 'SQL'
           },
           source: {
             text: 'Fresh Sushi Paris website',
             link: 'https://www.sushifreshparis.fr/index'
           },
           link: 'https://bere0058.github.io/sushi-fresh-fr/'
-        },
-        contact: {
-          title: 'Contact Book',
-          images: ['contactBook-1.png', 'contactBook-1.png'],
-          backgrounds: ["Contact Book is an editable interface that keeps record of your contact's info"],
-          responsabilities: ['Contacts info are retrieved from Contact Book Firebase database', "Users are able to filter contacts by using the search bar", "Users are able to access to contact's info", "Users are able to create, delete and modify contact's name, email and phone"],
-          functionalities: true,
-          coding: {
-            languages: 'HTML, CSS, JavaScript/JSON',
-            librairies: 'Bootstrap',
-            frameworks: 'Vue JS',
-            tools: 'Vite JS, Node JS, NPM, Firebase',
-            backEnd: 'SQL'
-          },
-          link: 'https://bere0058.github.io/contact-book/'
-        },
-        apodo: {
-          title: 'Apodo Search',
-          images: ['apodo-search.png', 'apodo-search-1.png'],
-          backgrounds: ['APODO search is a web application where the user can request different  Astronomy Pictures of the Day by date using NASA APOD API.'],
-          responsabilities: ['Users are able to choose to request different astronomy pictures', 'The application displays the title, date and the information of the corresponding picture', 'Users can save pictures in Favorites', 'Users can remove pictures from Favorites'],
-          coding: {
-            languages: 'HTML, CSS, JavaScript/JSON',
-            libraries: 'Bootstrap, JQuery',
-            tools: 'API REST'
-          },
-          link: 'https://bere0058.github.io/mtm6302-project-2/'
         },
       }
     }
@@ -193,54 +179,38 @@ app.component('front-end', {
       </section>
       <!-- Table template from Bootstrap -->
       <!-- Background -->
-      <section class="d-flex justify-content-center pt-4 flex-wrap">
-        <table class="table w-100" role="table">
-          <thead>
-            <tr>
-              <th scope="col" class=" h3">About the project</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="background in article.backgrounds">
-              <td class="">
-                {{background}}
+      <section class="justify-content-center pt-4 flex-wrap">
+        <div>
+          <div>
+            <h3 scope="col" class="">About the project</h3>
+            <td v-for="background in article.background">
+                <p class="">
+                  {{background}}
+                </p>
+            </td>
+          </div>
+        </div>
+        <div class="table-div">
+          <div class="d-flex flex-column">
+              <h3 v-if="article.functionalities" scope="col" class="">Functionalities</h3>
+              <h3 v-else scope="col" class="">Responsabilities</h3>
+              <td v-for="responsability in article.responsabilities">
+                <p class="">{{responsability}}</p>
               </td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+          <div class="d-flex flex-column">
+            <h3>Code:</h3>
+            <td v-for="(code, name) in article.coding">
+              <p class="text-capitalize">{{name}}: {{code}}</p> 
+            </td>
+            <td v-if="article.source">
+              <p class="">Content, imagery and logo taken from <a class="text-decoration-underline" :href="article.link">{{text}}</a></p>
+            </td>
+          </div>
+        </div>
       </section>
-      <!-- Responsabilities -->
-      <section class="d-flex justify-content-center pt-4 flex-wrap">
-        <table class="table w-100" role="table">
-          <thead>
-            <tr>
-              <th v-if="article.functionalities" scope="col" class=" h3">Functionalities</th>
-              <th v-else scope="col" class=" h3">Responsabilities</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="responsability in article.responsabilities">
-              <td class="">{{responsability}}</td>
-            </tr>
-            <tr>
-              <th scope="col" class=" h3">Code:</th>
-            </tr>
-            <tr v-for="(code, name) in article.coding">
-              <td class="">
-                <p class="text-capitalize">{{name}}:</p> 
-                <p>{{code}}</p>
-              </td>
-            </tr>
-            <tr v-if="article.source">
-              <td class="">
-                Content, imagery and logo taken from <a class="text-decoration-underline" :href="article.link">{{text}}</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="d-flex justify-content-center mb-3 flex-wrap">
-        <div class="align-self-start d-flex link-btn">
+      <section class="d-flex justify-content-center m-3">
+        <div class=" d-flex link-btn">
           <a :href="article.link" class="custom-btn btn-5 p-1 rounded">Check it on live</a>
         </div>
       </section>

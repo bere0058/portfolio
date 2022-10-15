@@ -1,14 +1,19 @@
+p, h3 {
+    padding: 1vw 0;
+}
 article {
     border-top: solid 0.3vw white;
 }
 article:first-child {
     border-top: none;
 }
-table > * {
-    border: none !important;
+.table-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
 }
 .link-btn {
-    margin-left: auto;
+    margin: auto;
 }
 .display-images {
     display: grid;
@@ -26,8 +31,11 @@ table > * {
     .availability>* {
         width: 100% !important;
     }
-    .display-images {
+    .display-images, .table-div {
         grid-template-columns: 1fr;
+    }
+    .table-div {
+        grid-gap: 0;
     }
     .link-btn {
         margin: auto;
