@@ -62,7 +62,7 @@ app.component('nav-bar', {
                     My work
                   </a>
                   <ul class="dropdown-menu bg-blue-2 w-100 border-0" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item text-center text-white" :href="link + 'coding/index.html'">Front-end</a></li>
+                    <li><a class="dropdown-item text-center text-white" :href="link + 'coding/index.html'">Full Stack</a></li>
                     <li><a class="dropdown-item text-center text-white" :href="link + 'v&p/index.html'">Multimedia</a></li>
                   </ul>
                 </li>
@@ -118,7 +118,7 @@ app.component('footer-bar', {
         </footer>
     `
 }) 
-app.component('front-end', {
+app.component('coding', {
   data () {
     return {
       articles: {

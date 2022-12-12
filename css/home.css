@@ -1,5 +1,9 @@
 /* General Style*/
 
+body {
+    max-height: 100vh;
+}
+
 h2 {
     color: #F5DC64;
     padding: 7% 0;
